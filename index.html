@@ -6,7 +6,8 @@
     <title>Můj první projekt v JavaScriptu</title>
 
     <!-- Odkazujeme na js -->
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js" defer></script>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
     <header>
@@ -15,21 +16,24 @@
     <main>
         <section>
             <!-- Pomocí id zajišťujeme komunikaci mezi html elementem a js.  -->
-            <label for="input">Zadej text</label>
+            <label for="input">Zadej odkaz:</label>
             <input type="text" id="input">
-            <!-- onclikc musí mít název funkce, který odpovídá funkci v js, který je připojený k html. Pozor je to key sensitivity, takže rozlišuje malá a velká písmena -->
-            <button onclick="Add()">Přidej</button>
+            <button onclick="Add()">Změň</button>
             <br>
-            <button onclick="D()">:D</button>
-            <button onclick="P()">:P</button>
-            <button onclick="xD()">xD</button>
-            <button onclick="Remove()">Smazat</button>
-        </section>
-        <section>
-            <!-- Zde odkazujeme na <p> pomocá id, zde se budou vypisovat text, který vložíme pomocí js přes input -->
-            <p id="output">
+            <label for="input">Zadej název:</label>
+            <input type="text" id="nazev">
+            <!-- onclikc musí mít název funkce, který odpovídá funkci v js, který je připojený k html. Pozor je to key sensitivity, takže rozlišuje malá a velká písmena --------- https://cdn.openart.ai/published/zqgyteNH1351s0XY5T2p/IjytEuo0__8E8_512.webp -->
 
-            </p>
+            <br>
+            <br>
+        </section>
+        <section class="bock">
+            <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRM-4xOnesHw2Y5KUx6sjY5U3Sudgsj8Ynqw&s" style="width:500px">
+            <div class="nazvy">
+                <p id="output">
+    
+                </p>
+            </div>
         </section>
     </main>
     <footer>
